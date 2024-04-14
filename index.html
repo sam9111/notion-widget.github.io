@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Notion Embed Test</title>
+  </head>
+  <body>
+    <h1>Simple Input Form for Notion</h1>
+    <p>Type your question and see how this can be integrated into Notion.</p>
+    <input type="text" id="question" placeholder="Enter your question here" />
+    <button onclick="showQuestion()">Submit</button>
+    <p id="displayQuestion"></p>
+
+    <script>
+      function showQuestion() {
+        var question = document.getElementById("question").value;
+        document.getElementById("displayQuestion").innerText =
+          "You asked: " + question;
+      }
+    </script>
+  </body>
+</html>
